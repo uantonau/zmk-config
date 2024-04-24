@@ -14,27 +14,27 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// | ESC TAB | F1 Q | F2 W | F3 E | F4 R | F5 T |   | F6 Y | F7 U | F8 I | F9 O | F10 P | BKSP  |
+// | CTRL    |  A   |  S   |  D   |  F   |  G   |   |  H   |  J   |  K   |  L   | F11 ; | F12 ' |
+// | SHFT    |  Z   |  X   |  C   |  V   |  B   |   |  N   |  M   |  ,   |  .   |  /    | SHFT  |
+//                         | GUI  | LWR  | SPC  |   | ENT  | RSE  | ALT  |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &mt ESC TAB &mt F1 Q &mt F2 W &mt F3 E &mt F4 R &mt F5 T    &mt F6 Y &mt F7 U &mt F8 I  &mt F9 O &mt F10 P    &kp BSPC
+   &kp LCTRL   &kp A    &kp S    &kp D    &kp F    &kp G       &kp H    &kp J    &kp K     &kp L    &mt F11 SEMI &mt F12 SQT
+   &kp LSHFT   &kp Z    &kp X    &kp C    &kp V    &kp B       &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH     &kp RSHFT
+                                 &kp LGUI &mo 1    &kp SPACE   &kp RET  &mo 2l   &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | F11 | F12  |
-// | SHFT |BTCLR|     |     |     |     |   | F6  | F7  | F8  | F9  | F10 | SHFT |
+// | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | UP  | F12  |
+// | SHFT |BTCLR|     |     |     |     |   |     |     |     | LFT | DWN | RGT  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp BSPC
-   &kp LCTRL  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F11 &kp F12
-   &kp LSHFT  &bt BT_CLR   &trans       &trans       &trans       &trans         &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &kp RSHFT
+   &kp LCTRL  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp UP &trans
+   &kp LSHFT  &bt BT_CLR   &trans       &trans       &trans       &trans         &trans   &trans   &trans &kp LEFT  &kp DOWN &kp RIGHT
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -43,12 +43,12 @@
 // -----------------------------------------------------------------------------------------
 // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT | F1  | F2  | F3  | F4  | F5  |   |  _  |  +  |  {  |  }  | "|" | SHFT |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" | SHFT |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp RSHFT
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp RSHFT
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
