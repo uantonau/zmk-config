@@ -25,11 +25,12 @@
                                  &kp LGUI &mo 1    &kp SPACE   &kp RET  &mo 2    &kp RALT
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | UP  | F12  |
-// | SHFT |BTCLR|     |     |     |     |   |     |     |     | LFT | DWN | RGT  |
+// | SHFT |BTCLR|     |     |     |     |   | F11 | F12 |     | LFT | DWN | RGT  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0  &kp BSPC
