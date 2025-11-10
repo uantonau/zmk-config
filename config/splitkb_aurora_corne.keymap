@@ -13,7 +13,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         single_quote {
@@ -33,7 +33,7 @@
 
         toggle_gaming_layer {
             bindings = <&tog 4>;
-            key-positions = <0 5>;
+            key-positions = <5 1>;
         };
     };
 
